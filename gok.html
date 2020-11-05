@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+            integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="material/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="material/css/mdb.min.css" />
+        <link rel="stylesheet" href="material/css/style.css" />
+        <title>Proje</title>
+    </head>
+    <body>
+        <div class="header_logo">
+            <img class="img" src="assets/logo.jpg" />
+            <form class="form-inline" style="display: inline-flex; float: right; height: 70px;">
+                <div class="md-form">
+                    <input style="width: 150px; margin-right: 10px;" type="text" id="inputMDEx" placeholder="Username" class="form-control" />
+                </div>
+                <div class="md-form">
+                    <input style="width: 150px;" type="text" id="inputMDEx" placeholder="Password" class="form-control" />
+                </div>
+                <button type="button" style="border-radius: 20px; color: white;" class="btn btn-secondary"><a>Login</a></button>
+                <button type="button" style="border-radius: 20px; color: white;" class="btn btn-success">
+                    <svg width="2em" height="1em" viewBox="0 0 16 16" class="bi bi-person-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            fill-rule="evenodd"
+                            d="M8 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10zM13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"
+                        />
+                    </svg>
+                    <a>Register</a>
+                </button>
+            </form>
+        </div>
+        <div class="main card">
+            <div class="card-body">
+                <div style="margin: 0 80px; display: flex;">
+                    <p class="z-depth-5 live">LIVE</p>
+                    <p style="margin: 10px;"><b>Popular Matches</b></p>
+                    <div style="position: absolute; right: 110px; margin-top: 10px;">
+                        <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-caret-left-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.86 8.753l5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                        </svg>
+                        <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-caret-right-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="flexbox">
+                    <div class="card" style="border-radius: 20px; height: 250px; width: 320px;">
+                        <div class="card-body">
+                            <div style="position: relative; display: flex;">
+                                <div class="secondteam">
+                                    <img class="teamlogo" src="assets/chelsea.png" />
+                                </div>
+                                <div class="firstteam">
+                                    <img class="teamlogo" src="assets/united.png" />
+                                </div>
+                                <div style="display: flex; position: absolute; right: 0;">
+                                    <p style="background: white; color: black;" class="z-depth-5 live">1st half</p>
+                                    <h4 style="margin: 8px;">43'</h4>
+                                </div>
+                            </div>
+                            <div style="margin: 10px;">
+                                <ul>
+                                    <li>
+                                        Premier Leauge
+                                    </li>
+                                    <li>
+                                        <div style="display: flex; position: relative; list-style-type: none;">
+                                            <p><b>Manchester United</b></p>
+                                            <p style="position: absolute; right: 0;">1</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div style="display: flex; position: relative;">
+                                            <p><b>Chelsea</b></p>
+                                            <p style="position: absolute; right: 0;">1</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="flexbox_rates">
+                                <div>
+                                    <button style="color: darkgreen;" type="button" class="btn btn-success">1.28</button>
+                                </div>
+                                <div>
+                                    <button style="color: darkred;" type="button" class="btn btn-danger">3.14</button>
+                                </div>
+                                <div>
+                                    <button style="color: black;" type="button" class="btn btn-light">2.16</button>
+                                </div>
+                                <div>
+                                    <button style="color: black;" type="button" class="btn btn-light">+48</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="border-radius: 20px; height: 250px; width: 320px;">
+                        <div class="card-body">
+                            <div style="position: relative; display: flex;">
+                                <div class="secondteam">
+                                    <img class="teamlogo" src="assets/everton.png" />
+                                </div>
+                                <div class="firstteam">
+                                    <img class="teamlogo" src="assets/arsenal.png" />
+                                </div>
+                                <div style="display: flex; position: absolute; right: 0;">
+                                    <p style="background: white; color: black;" class="z-depth-5 live">2nd half</p>
+                                    <h4 style="margin: 8px;">64'</h4>
+                                </div>
+                            </div>
+                            <div style="margin: 10px;">
+                                <ul>
+                                    <li>
+                                        Premier Leauge
+                                    </li>
+                                    <li>
+                                        <div style="display: flex; position: relative; list-style-type: none;">
+                                            <p><b>Arsenal</b></p>
+                                            <p style="position: absolute; right: 0;">1</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div style="display: flex; position: relative;">
+                                            <p><b>Everton</b></p>
+                                            <p style="position: absolute; right: 0;">2</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="flexbox_rates">
+                                <div>
+                                    <button style="color: black;" type="button" class="btn btn-light">1.35</button>
+                                </div>
+                                <div>
+                                    <button style="color: black;" type="button" class="btn btn-light">2.10</button>
+                                </div>
+                                <div>
+                                    <button style="color: black;" type="button" class="btn btn-light">2.80</button>
+                                </div>
+                                <div>
+                                    <button style="color: black;" type="button" class="btn btn-light">+48</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="background-color: white; border-radius: 20px; height: 250px; width: 665px; justify-content: center; text-align: center; display: flex; margin: 40px auto;">
+                    <p class="headerstyle"><b>Casino</b></p>
+                    <p class="header1style">Popular Games</p>
+                    <div class="md-form mt-0" style="width: 100px; float: left; position: absolute; margin-bottom: 200px; margin-left: 500px;">
+                        <input class="form-control" type="text" placeholder="Search" aria-label="Search" />
+                    </div>
+                    <div class="container" style="position: absolute; justify-content: left; margin-top: 40px; margin-left: 15px;">
+                        <aside class="aside">
+                            <img class="gamecontact" src="assets/game-contact.png" />
+                        </aside>
+                        <section class="item-1">
+                            <img class="defaultcasinologo" src="assets/game-megamoolah.png" />
+                        </section>
+                        <header class="header">
+                            <img class="belloffortunelogo" src="assets/game-bellofFortune.png" />
+                        </header>
+                        <section class="item-5">
+                            <img class="defaultcasinologo"src="assets/game-starburst.png" />
+                        </section>
+                        <section class="item-2">
+                            <img class="defaultcasinologo" src="assets/game-firefly.png" />
+                        </section>
+                        <section class="item-3">
+                            <img class="defaultcasinologo" src="assets/game-bookofdead.png" />
+                        </section>
+                        <section class="item-4">
+                            <img class="defaultcasinologo" src="assets/game-wildfalls.png" />
+                        </section>
+                        <section class="item-6">
+                            <img class="defaultcasinologo" src="assets/game-cashsplash.png" />
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="announcements card">
+            <div class="card-body">
+                <p class="header2style"><b>News</b></p>
+                <p class="header3style">Current Sports news</p>
+                <div class="scrollmenu">
+                    <div class="sportnews card" id="card2">
+                        <div class="card-body">
+                            <img class="img_sport" src="assets/icehockey.jpg" alt="icehockey" />
+                            <p class="date live">26 Oct</p>
+                            <div style="float: left; width: 100px;">
+                                <img class="ball" src="assets/ball.png" alt="ball" />
+                                <p style="font-size: 10px; color: #d6d4d4; margin-left: 25px;">ICE HOCKEY</p>
+                            </div>
+                            <div>
+                                <p class="newsheader">Will Phoenix's MLS expansion bid rise above the others project system ?</p>
+                                <p class="news">There are many variations of passages alteration form alteration in some form Lorem Ipsum available, but form lorrem the majority have suffered alteration in some form, by injected humour.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sportnews card" id="card1">
+                        <div class="card-body">
+                            <img class="img_sport" src="assets/football.jpg" alt="football" />
+                            <p class="date live">25 Oct</p>
+                            <div style="float: left; width: 100px;">
+                                <img class="ball" src="assets/ball.png" alt="ball" />
+                                <p style="font-size: 10px; color: #d6d4d4; margin-left: 5px;">FOOTBALL</p>
+                            </div>
+                            <div>
+                                <p class="newsheader">Clemson topples Alabama on last-second toucdown for title</p>
+                                <p class="news">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sportnews card" id="card3">
+                        <div class="card-body">
+                            <img class="img_sport" src="assets/tenis.jpg" alt="tennis" />
+                            <p class="date live">24 Oct</p>
+                            <div style="float: left; width: 100px;">
+                                <img class="ball" src="assets/ball.png" alt="ball" />
+                                <p style="font-size: 10px; color: #d6d4d4; ">TENNIS</p>
+                            </div>
+                            <div>
+                                <p class="newsheader">Will Phoenix's MLS expansion bid rise above the others project system ?</p>
+                                <p class="news">There are many variations of passages alteration form alteration in some form Lorem Ipsum available, but form lorrem the majority have suffered alteration in some form, by injected humour.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="league card">
+            <div class="card-body">
+                <div class="card" style="border-radius: 20px; width: 665px; justify-content: center; margin: 0 auto;">
+                    <div style="height: 310px;" class="card-body">
+                        <div style="display: inline-flex;">
+                            <img style="width: 25px; height: 25px; margin-left: 25px;" src="assets/italy.png" alt="Italy" />
+                            <p class="header4style"><b>Italia Seria A</b></p>
+                            <img style="margin-left: 170px; margin-top: 5px;" />
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                            </svg>
+                            <p style="position: absolute; right: 20px; color: lightgray;">Score Board</p>
+                        </div>
+                        <table class="table table-sm">
+                            <tr style="color: lightgray;">
+                                <thead>
+                                    <th style="width: 250px;" colspan="15">
+                                        Team
+                                    </th>
+                                    <th style="width: 15px; text-align: right;" colspan="1">
+                                        O
+                                    </th>
+                                    <th style="width: 15px; text-align: right;" colspan="1">
+                                        P
+                                    </th>
+                                    <th style="width: 15px; text-align: right;" colspan="1">
+                                        AV
+                                    </th>
+                                </thead>
+                            </tr>
+                            <tbody>
+                                <tr>
+                                    <td colspan="15">
+                                        <button class="scoreteamlogo">
+                                            <img class="logostyle" src="assets/juventus.png" />
+                                        </button>
+                                        Juventus
+                                    </td>
+                                    <td style="text-align: right;" colspan="1">
+                                        8
+                                    </td>
+                                    <td style="text-align: right;" colspan="1">
+                                        22
+                                    </td>
+                                    <td style="text-align: right;" colspan="1">
+                                        +8
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="15">
+                                        <button class="scoreteamlogo">
+                                            <img class="logostyle" src="assets/inter.png" />
+                                        </button>
+                                        Inter
+                                    </td>
+                                    <td style="text-align: right;" colspan="1">
+                                        8
+                                    </td>
+                                    <td style="text-align: right;" colspan="1">
+                                        21
+                                    </td>
+                                    <td style="text-align: right;" colspan="1">
+                                        +11
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="15">
+                                        <button class="scoreteamlogo">
+                                            <img class="logostyle" src="assets/madrid.jpg" />
+                                        </button>
+                                        Real Madrid
+                                    </td>
+                                    <td style="text-align: right;" colspan="1">
+                                        8
+                                    </td>
+                                    <td style="text-align: right;" colspan="1">
+                                        17
+                                    </td>
+                                    <td style="text-align: right;" colspan="1">
+                                        +8
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center; color: green;" colspan="18">Show All</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <p>
+                    Copyright 2020 Corebet
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

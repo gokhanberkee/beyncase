@@ -1,0 +1,292 @@
+html
+  body
+    width: 860px
+    margin: 0 auto
+
+@mixin letter($left : null, $color : null, $bottom : null)
+  float: left
+  position: absolute
+  margin-bottom: $bottom
+  font-size: 20px
+  color: $color
+  margin-left: $left
+
+@mixin flexlogo()
+ width: 50px
+ height: 50px
+ border-radius: 50%
+
+@mixin clamp
+  word-break: break-all
+  word-wrap: break-word
+
+@mixin casinogamelogo($width : 80px, $height : 80px, $radius : 10%)
+ width: $width
+ height: $height
+ border-radius: $radius
+
+@mixin sportsnewscard($radius : 20px, $height : 250px, $left : 430px, $width : 320px)
+ border-radius: $radius
+ height: $height
+ margin-left: $left
+ width: $width
+
+#card1
+  @include sportsnewscard()
+  position: absolute
+
+#card2
+  @include sportsnewscard($left : 80px)
+
+#card3
+  @include sportsnewscard($left : 780px)
+  position: absolute
+
+.scoreteamlogo
+  width: 36px
+  height: 36px
+  border-radius: 50%
+  border: 1px solid lightgray
+  background-color: white
+  justify-content: center
+.logostyle
+  width: 24px
+  height: 24px
+  border-radius: 50%
+
+.defaultcasinologo
+ @include casinogamelogo()
+
+.belloffortunelogo
+  @include casinogamelogo($width : 180px)
+
+.gamecontact
+  @include casinogamelogo($width : 175px, $height : 175px)
+
+.ball
+  width: 15px
+  height: 15px
+  float: left
+  
+
+.firstteam
+  @include flexlogo()
+
+.secondteam
+  position: absolute
+  left: 35px
+  @include flexlogo()
+
+.teamlogo
+  width: 50px
+  height: 50px
+  
+   
+
+.headerstyle
+  @include letter($left : 30px, $bottom : 200px )
+.header1style
+  @include letter(105px, #d6d4d4, 200px )
+.header2style
+  @include letter($left : 125px, $bottom : 10px)
+.header3style
+  @include letter(190px, #d6d4d4)
+.header4style
+  @include letter($left : 60px, $bottom : 165px)
+
+.img
+  width: 70px
+  height: 50px
+  position: absolute
+  top: 20px
+
+.buttonshape
+  border-radius: 20px
+  background-color: purple
+  width: 80px
+  color: white
+  height: 40px
+  margin-right: 10px
+
+.flexbox
+  display: flex
+  flex-wrap: nowrap
+  justify-content: center
+  >div
+    width: 100px
+    margin: 10px
+    text-align: center
+
+.flexbox_rates
+  display: flex
+  flex-wrap: nowrap
+  justify-content: center
+  margin-top: -15px
+  >div
+    width: 100px
+    text-align: center
+    color: black
+    >button
+      padding: 10px
+      width: 60px
+
+.live
+  width: 70px
+  height: 40px
+  justify-content: center
+  border-radius: 20px
+  color: white
+  background-color: green
+  text-align: center
+  padding: 10px
+
+ul
+  padding: 0
+  li
+    text-align: left
+    list-style-type: none
+
+.container
+  margin: 0px auto
+  grid-gap: 25px
+  display: grid
+  grid-template-columns: repeat(6, 75px)
+  grid-template-rows: repeat(2, 75px)
+  grid-auto-flow: column
+  grid-auto-columns: 60px
+  grid-template-areas: "aside aside item-1 header header item-5" "aside aside item-2 item-3 item-4 item-6"
+
+.header
+  grid-area: header
+  grid-column: 4/6
+
+.aside
+  grid-area: aside
+  grid-column: span 2
+  grid-row: span 2
+
+.item-1
+  grid-area: item-1
+
+.item-2
+  grid-area: item-2
+
+.item-3
+  grid-area: item-3
+
+.item-4
+  grid-area: item-4
+
+.item-5
+  grid-area: item-5
+
+.item-6
+  grid-area: item-6
+
+.scrollmenu
+  margin-left: 5px
+  top: -30px
+  display: flex
+  flex-wrap: nowrap
+  overflow-y: hidden
+  overflow-x: scroll
+  -ms-overflow-style: -ms-autohiding-scrollbar
+  -webkit-overflow-scrolling: auto
+  position: absolute
+  width: 830px
+  text-align: center
+  height: 380px
+
+
+
+.newsheader  
+  font-size: 12px  
+  @include clamp
+  width: 245px
+  text-align: left
+  float: left
+  font-weight: bold
+  margin: 0px
+.news  
+  font-size: 10px
+  @include clamp
+  white-space: normal
+  width: 275px
+  display: -webkit-box
+  -webkit-line-clamp: 3
+  -webkit-box-orient: vertical
+  overflow: hidden
+  text-align: left
+
+.header_logo
+  background-color: white
+  padding: 0 40px
+  height: 80px
+
+.main
+  width: 860px
+  background-color: #f1f1f1 !important
+
+.league
+  width: 860px
+  background-color: #f1f1f1 !important
+
+.announcements
+  background-color: white
+  height: 500px
+  width: 860px
+  justify-content: center
+  height: 380px
+
+
+.date
+  background: #1f0494 
+  width: 50px 
+  height: 50px 
+  text-align: center 
+  position: absolute
+  color: white
+  box-shadow: 0 2px 2px 1px grey
+  float: right
+  margin-top: -25px
+  right: 50px
+
+.img_sport
+  width: 280px
+  height: 120px
+  border-radius: 5%
+
+.sportnews
+  border-radius: 20px !important
+  height: 270px
+  margin: 100px
+  width: 320px
+
+table
+  tr:nth-child(2) 
+    background-color: #f2f2f2
+  
+.footer
+  height: 100px
+  text-align: center
+  background-color: #6c6e669a
+  
+  p
+    margin-top: 20px
+    font-style: bold
+    color: white
+
+input
+  border-bottom: none !important
+
+::-webkit-scrollbar
+  height: 5px
+  width: 1px
+
+::-webkit-scrollbar-thumb 
+  background: grey
+
+::-webkit-scrollbar-track
+  margin: 80px
+
+
